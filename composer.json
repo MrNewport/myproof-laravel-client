@@ -1,0 +1,41 @@
+{
+    "name": "myproof/laravel-client",
+    "description": "Typed Laravel client for the implemented MyProof scoped delivery API",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "illuminate/http": "^12.0 || ^13.0",
+        "illuminate/support": "^12.0 || ^13.0",
+        "guzzlehttp/guzzle": "^7.9",
+        "myproof/evidence": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0 || ^11.0",
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyProof\\LaravelClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyProof\\LaravelClient\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MyProof\\LaravelClient\\MyProofServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": false
+    }
+}

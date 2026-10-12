@@ -1,0 +1,273 @@
+{
+    "schema": "myproof.sdk-source.v1",
+    "source": "reviewed MyProof Laravel client blobs",
+    "files": [
+        {
+            "source": "packages/laravel-client/.gitattributes",
+            "target": ".gitattributes",
+            "source_sha256": "582cbb9d13ba0e1eb4568784d124ce1bc4a466e0f2438b8128aebfddac105bf9",
+            "release_sha256": "582cbb9d13ba0e1eb4568784d124ce1bc4a466e0f2438b8128aebfddac105bf9",
+            "bytes": 123
+        },
+        {
+            "source": "packages/laravel-client/.github/workflows/tests.yml",
+            "target": ".github/workflows/tests.yml",
+            "source_sha256": "d683780a2a3b945a7308688cddce8dec792be25570d0b45c7473a52a28f5d91e",
+            "release_sha256": "d683780a2a3b945a7308688cddce8dec792be25570d0b45c7473a52a28f5d91e",
+            "bytes": 2225
+        },
+        {
+            "source": "packages/laravel-client/.gitignore",
+            "target": ".gitignore",
+            "source_sha256": "ce4b9ed7449a5ababf4f8b16fe27c36af3a63bb6a5e9e1915b046660f747aa34",
+            "release_sha256": "ce4b9ed7449a5ababf4f8b16fe27c36af3a63bb6a5e9e1915b046660f747aa34",
+            "bytes": 41
+        },
+        {
+            "source": "packages/laravel-client/LICENSE",
+            "target": "LICENSE",
+            "source_sha256": "a9c18e77b16deac7d8372abb3ac7dac5f331c7ab2c1272156520bdecf3870ba7",
+            "release_sha256": "a9c18e77b16deac7d8372abb3ac7dac5f331c7ab2c1272156520bdecf3870ba7",
+            "bytes": 1077
+        },
+        {
+            "source": "packages/laravel-client/README.md",
+            "target": "README.md",
+            "source_sha256": "e5110cf9948413876ee7af464df3dd871db508e9a3028f47a29c6f754c1312ad",
+            "release_sha256": "e5110cf9948413876ee7af464df3dd871db508e9a3028f47a29c6f754c1312ad",
+            "bytes": 9414
+        },
+        {
+            "source": "packages/laravel-client/composer.json",
+            "target": "composer.json",
+            "source_sha256": "12c39f7f92c7a1b29122ab6f227386f0574da990851523748ed77b04ac8fe524",
+            "release_sha256": "eeef7d745c4bf1b322daa82eb44b899e346228b3ec69a796567e90925fba2dbf",
+            "bytes": 1010,
+            "transform": "stable-evidence-constraint-and-no-adjacent-path"
+        },
+        {
+            "source": "packages/laravel-client/config/myproof-client.php",
+            "target": "config/myproof-client.php",
+            "source_sha256": "5cf7b8a614f98765fadac22d6e77d967fee01152034dca117c1a79148eaf2f4f",
+            "release_sha256": "5cf7b8a614f98765fadac22d6e77d967fee01152034dca117c1a79148eaf2f4f",
+            "bytes": 193
+        },
+        {
+            "source": "packages/laravel-client/docs/release.md",
+            "target": "docs/release.md",
+            "source_sha256": "d3ae7a2a67caed0ab94223f25f0155ae92021082f359e378c773ba09cab0bcc5",
+            "release_sha256": "d3ae7a2a67caed0ab94223f25f0155ae92021082f359e378c773ba09cab0bcc5",
+            "bytes": 4716
+        },
+        {
+            "source": "packages/laravel-client/phpunit.xml",
+            "target": "phpunit.xml",
+            "source_sha256": "e09e38c546f2377ba1f332cde826a5db9118e17ba0cb64083f6f6c69bdc7bda0",
+            "release_sha256": "e09e38c546f2377ba1f332cde826a5db9118e17ba0cb64083f6f6c69bdc7bda0",
+            "bytes": 227
+        },
+        {
+            "source": "packages/laravel-client/release-manifest.json",
+            "target": "release-manifest.json",
+            "source_sha256": "17db40710df17a56314ba9e2eeb2d143f3644c0429a89ef03a75b0212c6f8d76",
+            "release_sha256": "17db40710df17a56314ba9e2eeb2d143f3644c0429a89ef03a75b0212c6f8d76",
+            "bytes": 1868
+        },
+        {
+            "source": "packages/laravel-client/src/Data/AccessLink.php",
+            "target": "src/Data/AccessLink.php",
+            "source_sha256": "79cf92de8d0b71e7ad306555f78d6d23afb85e2dca5d360040449caa3082ae9f",
+            "release_sha256": "79cf92de8d0b71e7ad306555f78d6d23afb85e2dca5d360040449caa3082ae9f",
+            "bytes": 815
+        },
+        {
+            "source": "packages/laravel-client/src/Data/Asset.php",
+            "target": "src/Data/Asset.php",
+            "source_sha256": "d084a913cbee59c76ea067e97bc8c03eac2929313a817bae2ecaaff46f922b5b",
+            "release_sha256": "d084a913cbee59c76ea067e97bc8c03eac2929313a817bae2ecaaff46f922b5b",
+            "bytes": 384
+        },
+        {
+            "source": "packages/laravel-client/src/Data/AssetVersion.php",
+            "target": "src/Data/AssetVersion.php",
+            "source_sha256": "e929a747a7378a2b4f54fb5302019de73c885447afe051fa9b20959fc03f1506",
+            "release_sha256": "e929a747a7378a2b4f54fb5302019de73c885447afe051fa9b20959fc03f1506",
+            "bytes": 702
+        },
+        {
+            "source": "packages/laravel-client/src/Data/Decode.php",
+            "target": "src/Data/Decode.php",
+            "source_sha256": "77b047d0ea7dd089551539cb5b5c21de7dbff51a564d488781027433856abc85",
+            "release_sha256": "77b047d0ea7dd089551539cb5b5c21de7dbff51a564d488781027433856abc85",
+            "bytes": 1108
+        },
+        {
+            "source": "packages/laravel-client/src/Data/Delivery.php",
+            "target": "src/Data/Delivery.php",
+            "source_sha256": "283ff7a8afef45e398f1a1f79a686da402b1b1002da9aeeb0661d78a9b04baa3",
+            "release_sha256": "283ff7a8afef45e398f1a1f79a686da402b1b1002da9aeeb0661d78a9b04baa3",
+            "bytes": 931
+        },
+        {
+            "source": "packages/laravel-client/src/Data/DeliveryInput.php",
+            "target": "src/Data/DeliveryInput.php",
+            "source_sha256": "a631ea92c3c8f97e936443db343a0049cf7d625b171dbd21f9c35a472b409762",
+            "release_sha256": "a631ea92c3c8f97e936443db343a0049cf7d625b171dbd21f9c35a472b409762",
+            "bytes": 474
+        },
+        {
+            "source": "packages/laravel-client/src/Data/Domain.php",
+            "target": "src/Data/Domain.php",
+            "source_sha256": "c820b933b9a003cd2f96f0d70eacd4a412fafe76ac334672f82a417546ccf213",
+            "release_sha256": "c820b933b9a003cd2f96f0d70eacd4a412fafe76ac334672f82a417546ccf213",
+            "bytes": 2455
+        },
+        {
+            "source": "packages/laravel-client/src/Data/DomainClaim.php",
+            "target": "src/Data/DomainClaim.php",
+            "source_sha256": "421d432d398b1512caa79dbc84bea6f29bae9364480cfcfa10c6b08a5fa649f3",
+            "release_sha256": "421d432d398b1512caa79dbc84bea6f29bae9364480cfcfa10c6b08a5fa649f3",
+            "bytes": 1436
+        },
+        {
+            "source": "packages/laravel-client/src/Data/DomainInput.php",
+            "target": "src/Data/DomainInput.php",
+            "source_sha256": "5a4824c713ea55bd2e826fca1f73444ea5cd5509aad0767d162ee8e7c3e70e20",
+            "release_sha256": "5a4824c713ea55bd2e826fca1f73444ea5cd5509aad0767d162ee8e7c3e70e20",
+            "bytes": 690
+        },
+        {
+            "source": "packages/laravel-client/src/Data/DownloadLink.php",
+            "target": "src/Data/DownloadLink.php",
+            "source_sha256": "ed832c13c7027b1dbfa224ce39a79c3129780e09a1c19ba7eca26aa581e21b86",
+            "release_sha256": "ed832c13c7027b1dbfa224ce39a79c3129780e09a1c19ba7eca26aa581e21b86",
+            "bytes": 1073
+        },
+        {
+            "source": "packages/laravel-client/src/Data/EvidenceEvent.php",
+            "target": "src/Data/EvidenceEvent.php",
+            "source_sha256": "935021b27877870ed62a566f481da2db6ac12603557d336420b3618c7bc911f7",
+            "release_sha256": "935021b27877870ed62a566f481da2db6ac12603557d336420b3618c7bc911f7",
+            "bytes": 826
+        },
+        {
+            "source": "packages/laravel-client/src/Data/EvidenceExport.php",
+            "target": "src/Data/EvidenceExport.php",
+            "source_sha256": "e32ef9c48a9041cc320931a64f90e4732738c0633a6cb7a4cc131315e49332ae",
+            "release_sha256": "e32ef9c48a9041cc320931a64f90e4732738c0633a6cb7a4cc131315e49332ae",
+            "bytes": 1392
+        },
+        {
+            "source": "packages/laravel-client/src/Data/Order.php",
+            "target": "src/Data/Order.php",
+            "source_sha256": "5166572ca9de42b3e63e2f5ec3067717eface766e5cc2b525879c4e17aa9e2fa",
+            "release_sha256": "5166572ca9de42b3e63e2f5ec3067717eface766e5cc2b525879c4e17aa9e2fa",
+            "bytes": 405
+        },
+        {
+            "source": "packages/laravel-client/src/Data/OrderInput.php",
+            "target": "src/Data/OrderInput.php",
+            "source_sha256": "e18192e3b2a1b5d58fcedb3089bc38c0b3a7786dd6728de4efb0d32f5d94d503",
+            "release_sha256": "e18192e3b2a1b5d58fcedb3089bc38c0b3a7786dd6728de4efb0d32f5d94d503",
+            "bytes": 916
+        },
+        {
+            "source": "packages/laravel-client/src/Data/Page.php",
+            "target": "src/Data/Page.php",
+            "source_sha256": "c84303ab164df67fd2f44225925f1a1cbbedfca67af07ec18881cb7463af3630",
+            "release_sha256": "c84303ab164df67fd2f44225925f1a1cbbedfca67af07ec18881cb7463af3630",
+            "bytes": 1063
+        },
+        {
+            "source": "packages/laravel-client/src/Data/Revocation.php",
+            "target": "src/Data/Revocation.php",
+            "source_sha256": "40a6fc541775c1d6d4177149eae3016380ac931680283984fc4b0a317ae1ed52",
+            "release_sha256": "40a6fc541775c1d6d4177149eae3016380ac931680283984fc4b0a317ae1ed52",
+            "bytes": 471
+        },
+        {
+            "source": "packages/laravel-client/src/Data/UploadAuthorization.php",
+            "target": "src/Data/UploadAuthorization.php",
+            "source_sha256": "66dbcb3dfc343449d30c676ada97b074a11a2ecfcd1437dc95ddcd48b2a176df",
+            "release_sha256": "66dbcb3dfc343449d30c676ada97b074a11a2ecfcd1437dc95ddcd48b2a176df",
+            "bytes": 1202
+        },
+        {
+            "source": "packages/laravel-client/src/Data/UploadInput.php",
+            "target": "src/Data/UploadInput.php",
+            "source_sha256": "03dd03e800641836a484c418ba1f6d3e71ccf16b731cbf8f8a7cfc1a4391d633",
+            "release_sha256": "03dd03e800641836a484c418ba1f6d3e71ccf16b731cbf8f8a7cfc1a4391d633",
+            "bytes": 650
+        },
+        {
+            "source": "packages/laravel-client/src/Exceptions/ApiException.php",
+            "target": "src/Exceptions/ApiException.php",
+            "source_sha256": "2bd1c549882d03e87bee53ab5b3a9d77913ee33be5b8463f215bf2d94463cb98",
+            "release_sha256": "2bd1c549882d03e87bee53ab5b3a9d77913ee33be5b8463f215bf2d94463cb98",
+            "bytes": 487
+        },
+        {
+            "source": "packages/laravel-client/src/MyProofClient.php",
+            "target": "src/MyProofClient.php",
+            "source_sha256": "a5474a08417d256fd18d7b1bd89d8d7020f7a9ab9fa6976340549125da7332a3",
+            "release_sha256": "a5474a08417d256fd18d7b1bd89d8d7020f7a9ab9fa6976340549125da7332a3",
+            "bytes": 12533
+        },
+        {
+            "source": "packages/laravel-client/src/MyProofServiceProvider.php",
+            "target": "src/MyProofServiceProvider.php",
+            "source_sha256": "4ab99d5b753879b3d9c1b9582cb7b938d2d1f78c7d200d25073d649cd0464669",
+            "release_sha256": "4ab99d5b753879b3d9c1b9582cb7b938d2d1f78c7d200d25073d649cd0464669",
+            "bytes": 970
+        },
+        {
+            "source": "packages/laravel-client/src/Webhooks/Notification.php",
+            "target": "src/Webhooks/Notification.php",
+            "source_sha256": "2c9c2f4a30e4b25e614790a042f294b83f2f9777a08348c3007e7ce59ad7576e",
+            "release_sha256": "2c9c2f4a30e4b25e614790a042f294b83f2f9777a08348c3007e7ce59ad7576e",
+            "bytes": 495
+        },
+        {
+            "source": "packages/laravel-client/src/Webhooks/NotificationEvidence.php",
+            "target": "src/Webhooks/NotificationEvidence.php",
+            "source_sha256": "61065e51cc70de212721e20010fb5b179afa8895f1b08aadea5f6e1ef367a3ed",
+            "release_sha256": "61065e51cc70de212721e20010fb5b179afa8895f1b08aadea5f6e1ef367a3ed",
+            "bytes": 270
+        },
+        {
+            "source": "packages/laravel-client/src/Webhooks/NotificationExport.php",
+            "target": "src/Webhooks/NotificationExport.php",
+            "source_sha256": "6f43f55366912555a418be898548b107985bee08e399b74bb07fd73c7ba47336",
+            "release_sha256": "6f43f55366912555a418be898548b107985bee08e399b74bb07fd73c7ba47336",
+            "bytes": 225
+        },
+        {
+            "source": "packages/laravel-client/src/Webhooks/NotificationVerifier.php",
+            "target": "src/Webhooks/NotificationVerifier.php",
+            "source_sha256": "ce82eef85a80575d703b1917515f1a05f97f87bc16ce23fb39e56dd0cdbaacc2",
+            "release_sha256": "ce82eef85a80575d703b1917515f1a05f97f87bc16ce23fb39e56dd0cdbaacc2",
+            "bytes": 4169
+        },
+        {
+            "source": "packages/laravel-client/tests/ClientTest.php",
+            "target": "tests/ClientTest.php",
+            "source_sha256": "2fd9159b4ea690f7a477b37140f86a9cb961fe17e25ba5e62dc82cc3f4fdf9fa",
+            "release_sha256": "2fd9159b4ea690f7a477b37140f86a9cb961fe17e25ba5e62dc82cc3f4fdf9fa",
+            "bytes": 16942
+        },
+        {
+            "source": "packages/laravel-client/tests/DomainClientTest.php",
+            "target": "tests/DomainClientTest.php",
+            "source_sha256": "57223fdeb4f528fe3413b86bb59f6a7cfee0ce07c45fe18c239a5b7e9a9e233d",
+            "release_sha256": "57223fdeb4f528fe3413b86bb59f6a7cfee0ce07c45fe18c239a5b7e9a9e233d",
+            "bytes": 5454
+        },
+        {
+            "source": "packages/laravel-client/tests/NotificationVerifierTest.php",
+            "target": "tests/NotificationVerifierTest.php",
+            "source_sha256": "4f41dc182e34037989159730d29eae0d9687d020ab1e321a9621c39ca9aad28c",
+            "release_sha256": "4f41dc182e34037989159730d29eae0d9687d020ab1e321a9621c39ca9aad28c",
+            "bytes": 4692
+        }
+    ]
+}

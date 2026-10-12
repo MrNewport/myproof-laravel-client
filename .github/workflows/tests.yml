@@ -1,0 +1,50 @@
+name: Laravel client package
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  supported-matrix:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - php: '8.3'
+            laravel: '12'
+            testbench: '10'
+          - php: '8.3'
+            laravel: '13'
+            testbench: '11'
+          - php: '8.4'
+            laravel: '12'
+            testbench: '10'
+          - php: '8.4'
+            laravel: '13'
+            testbench: '11'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: shivammathur/setup-php@d52fc211a0436f8839a587b3b5b8efddab4744ea # v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, sodium, zip
+          coverage: none
+          tools: composer:v2
+      - run: composer validate --strict
+      - name: Select reviewed public evidence release and Laravel major
+        run: |
+          composer config repositories.evidence vcs https://github.com/MrNewport/myproof-evidence
+          composer require --no-update "illuminate/http:^${{ matrix.laravel }}.0" "illuminate/support:^${{ matrix.laravel }}.0"
+          composer require --dev --no-update "orchestra/testbench:^${{ matrix.testbench }}.0"
+      - run: composer install --no-interaction --prefer-dist
+      - run: composer test
+      - name: Install as a consumer without application source
+        run: |
+          mkdir -p "$RUNNER_TEMP/consumer"
+          printf '%s\n' '{"name":"fixture/client-consumer","repositories":[{"type":"path","url":"'"$GITHUB_WORKSPACE"'","options":{"symlink":false,"versions":{"myproof/laravel-client":"1.0.0"}}},{"type":"vcs","url":"https://github.com/MrNewport/myproof-evidence"}],"require":{"myproof/laravel-client":"1.0.0"},"config":{"allow-plugins":false}}' > "$RUNNER_TEMP/consumer/composer.json"
+          composer install --working-dir="$RUNNER_TEMP/consumer" --no-interaction --prefer-dist
+          php -r 'require getenv("RUNNER_TEMP")."/consumer/vendor/autoload.php"; if (!class_exists(MyProof\LaravelClient\MyProofClient::class) || (new MyProof\Evidence\CanonicalJson())->encode((object)["ok"=>true]) !== "{\"ok\":true}") exit(1);'

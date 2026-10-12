@@ -1,0 +1,59 @@
+{
+  "schema": "myproof.package-release.v1",
+  "package": "myproof/laravel-client",
+  "source_prefix": "packages/laravel-client/",
+  "license": "MIT",
+  "files": [
+    ".gitattributes",
+    ".github/workflows/tests.yml",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "composer.json",
+    "config/myproof-client.php",
+    "docs/release.md",
+    "phpunit.xml",
+    "release-manifest.json",
+    "src/Data/AccessLink.php",
+    "src/Data/Asset.php",
+    "src/Data/AssetVersion.php",
+    "src/Data/Decode.php",
+    "src/Data/Delivery.php",
+    "src/Data/DeliveryInput.php",
+    "src/Data/Domain.php",
+    "src/Data/DomainClaim.php",
+    "src/Data/DomainInput.php",
+    "src/Data/DownloadLink.php",
+    "src/Data/EvidenceEvent.php",
+    "src/Data/EvidenceExport.php",
+    "src/Data/Order.php",
+    "src/Data/OrderInput.php",
+    "src/Data/Page.php",
+    "src/Data/Revocation.php",
+    "src/Data/UploadAuthorization.php",
+    "src/Data/UploadInput.php",
+    "src/Exceptions/ApiException.php",
+    "src/MyProofClient.php",
+    "src/MyProofServiceProvider.php",
+    "src/Webhooks/Notification.php",
+    "src/Webhooks/NotificationEvidence.php",
+    "src/Webhooks/NotificationExport.php",
+    "src/Webhooks/NotificationVerifier.php",
+    "tests/ClientTest.php",
+    "tests/DomainClientTest.php",
+    "tests/NotificationVerifierTest.php"
+  ],
+  "excluded_committed_files": [
+    "packages/laravel-client/build-release.php"
+  ],
+  "composer_release_changes": {
+    "require": {
+      "myproof/evidence": "^1.0"
+    },
+    "remove": [
+      "repositories"
+    ]
+  },
+  "publication": "not_performed",
+  "release_gate": "Publish and verify MrNewport/myproof-evidence v1.0.0 first. The standalone SDK candidate resolves only after that public tag or a local test-only path override; consumer roots must declare the public evidence VCS repository if Packagist is unavailable."
+}
