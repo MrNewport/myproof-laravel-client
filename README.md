@@ -1,5 +1,7 @@
 # MyProof Laravel client
 
+Read the [complete handbook](docs/HANDBOOK.md) for installation, contracts, configuration, failures and application recipes. The [feature inventory](docs/FEATURES.md) maps implemented behavior to its boundaries.
+
 Typed client for the implemented `/api/v1` delivery API. PHP 8.3+, Laravel 12/13. Tagged releases depend on the stable `myproof/evidence` package. Repository tags establish released versions; no Packagist listing is assumed.
 
 For installation from the public repositories, configure both repositories in your consuming application before selecting a released version:
